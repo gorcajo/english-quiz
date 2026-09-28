@@ -14,13 +14,15 @@ A single-page quiz for practicing spoken English translation from Spanish. It sh
 
 ## Running locally
 
-Browsers block `fetch` on local JSON files opened via `file://`, so serve the folder instead:
+Browsers block `fetch` on local JSON files opened via `file://`, so serve the folder instead of opening it directly:
 
 ```bash
-python3 -m http.server --directory src
+./run.py
 ```
 
-Then open `http://localhost:8000`.
+This starts a local server and opens `http://localhost:8000` in your browser.
+
+Alternatively, in VS Code you can run the **Run quiz server** launch configuration (`.vscode/launch.json`) to start it with the debugger attached.
 
 ## Adding exercises
 
