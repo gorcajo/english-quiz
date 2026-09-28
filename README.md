@@ -17,14 +17,14 @@ A single-page quiz for practicing spoken English translation from Spanish. It sh
 Browsers block `fetch` on local JSON files opened via `file://`, so serve the folder instead:
 
 ```bash
-python3 -m http.server
+python3 -m http.server --directory src
 ```
 
 Then open `http://localhost:8000`.
 
 ## Adding exercises
 
-Exercises live in JSON files at the repo root (e.g. [conditionals.json](conditionals.json), [modals.json](modals.json), [there-to-be.json](there-to-be.json)), each structured as:
+Exercises live in JSON files in the [src/resources/](src/resources/) directory (e.g. [conditionals.json](src/resources/conditionals.json), [modals.json](src/resources/modals.json), [there-to-be.json](src/resources/there-to-be.json)), each structured as:
 
 ```json
 {
@@ -41,4 +41,4 @@ Exercises live in JSON files at the repo root (e.g. [conditionals.json](conditio
 }
 ```
 
-To add a new topic file, also add its filename to `JSON_FILES` in [index.html](index.html).
+To add a new topic file, also add its filename to `JSON_FILES` in [src/index.html](src/index.html).

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES → EN Oral Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🗣️</text></svg>'>
+</head>
+
+<body>
+  <main>
+    <h1>🗣️ ES → EN Oral Quiz</h1>
+
+    <div id="error"></div>
+
+    <section id="setup-view">
+      <div class="filters-row">
+        <fieldset id="topics-fieldset">
+          <legend>Topics</legend>
+        </fieldset>
+        <fieldset id="sections-fieldset">
+          <legend>Sections</legend>
+        </fieldset>
+      </div>
+      <div class="actions">
+        <button id="startBtn">Start quiz</button>
+      </div>
+    </section>
+
+    <section id="quiz-view">
+      <div class="top-actions">
+        <button class="secondary" id="backBtn">← Back</button>
+      </div>
+      <div class="card">
+        <div class="meta" id="cardMeta"></div>
+        <div class="es" id="cardEs"></div>
+        <div class="en" id="cardEn"></div>
+      </div>
+      <div class="actions">
+        <button id="actionBtn">Show answer</button>
+      </div>
+      <p class="hint">Say the translation out loud, then press Enter / Space or click the button.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
