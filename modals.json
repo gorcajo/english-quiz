@@ -1,0 +1,279 @@
+{
+  "title": "Modal Verbs",
+  "instruction": "Translate each sentence from Spanish into English using the indicated modal verb(s).",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Ability and Permission",
+      "pattern": "can / could + base verb",
+      "items": [
+        {
+          "es": "Puedo hablar tres idiomas.",
+          "en": "I can speak three languages."
+        },
+        {
+          "es": "¿Puedes ayudarme con esto?",
+          "en": "Can you help me with this?"
+        },
+        {
+          "es": "Cuando era niño, podía correr muy rápido.",
+          "en": "When I was a child, I could run very fast."
+        },
+        {
+          "es": "No puedes aparcar aquí.",
+          "en": "You can't park here."
+        },
+        {
+          "es": "¿Podría usar tu teléfono, por favor?",
+          "en": "Could I use your phone, please?"
+        },
+        {
+          "es": "Ella no podía nadar el año pasado, pero ahora sí.",
+          "en": "She couldn't swim last year, but now she can."
+        },
+        {
+          "es": "¿Puedo salir un momento?",
+          "en": "Can I go out for a moment?"
+        },
+        {
+          "es": "No pudimos encontrar el hotel anoche.",
+          "en": "We couldn't find the hotel last night."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Obligation and Necessity",
+      "pattern": "must / have to / should + base verb",
+      "items": [
+        {
+          "es": "Debes llevar el cinturón de seguridad.",
+          "en": "You must wear a seatbelt."
+        },
+        {
+          "es": "Tengo que terminar este informe hoy.",
+          "en": "I have to finish this report today."
+        },
+        {
+          "es": "Deberías ver a un médico.",
+          "en": "You should see a doctor."
+        },
+        {
+          "es": "No debes contarle esto a nadie.",
+          "en": "You mustn't tell anyone this."
+        },
+        {
+          "es": "No tienes que venir si no quieres.",
+          "en": "You don't have to come if you don't want to."
+        },
+        {
+          "es": "Tenemos que estar allí a las nueve.",
+          "en": "We have to be there at nine."
+        },
+        {
+          "es": "No deberías comer tanto azúcar.",
+          "en": "You shouldn't eat so much sugar."
+        },
+        {
+          "es": "¿Tengo que rellenar este formulario?",
+          "en": "Do I have to fill out this form?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Possibility and Deduction (present)",
+      "pattern": "might / may / must / can't + base verb",
+      "items": [
+        {
+          "es": "Podría llover más tarde.",
+          "en": "It might rain later."
+        },
+        {
+          "es": "Puede que ella ya lo sepa.",
+          "en": "She may already know."
+        },
+        {
+          "es": "Debe estar cansado después de ese viaje.",
+          "en": "He must be tired after that trip."
+        },
+        {
+          "es": "No puede ser verdad.",
+          "en": "It can't be true."
+        },
+        {
+          "es": "Quizás él esté en la oficina ahora.",
+          "en": "He might be in the office now."
+        },
+        {
+          "es": "Ella debe ganar mucho dinero, tiene un coche nuevo.",
+          "en": "She must earn a lot of money, she has a new car."
+        },
+        {
+          "es": "No puede ser tan tarde.",
+          "en": "It can't be that late."
+        },
+        {
+          "es": "Puede que vayamos a la playa este fin de semana.",
+          "en": "We may go to the beach this weekend."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Past Modals",
+      "pattern": "modal + have + past participle",
+      "items": [
+        {
+          "es": "Deberías haberme llamado anoche.",
+          "en": "You should have called me last night."
+        },
+        {
+          "es": "No debiste haber comido tanto.",
+          "en": "You shouldn't have eaten so much."
+        },
+        {
+          "es": "Ella podría haber pasado el examen, pero no estudió.",
+          "en": "She could have passed the exam, but she didn't study."
+        },
+        {
+          "es": "Él debe haberse ido ya.",
+          "en": "He must have left already."
+        },
+        {
+          "es": "Puede que se haya olvidado de la reunión.",
+          "en": "She might have forgotten about the meeting."
+        },
+        {
+          "es": "Ella no puede haber dicho eso.",
+          "en": "She can't have said that."
+        },
+        {
+          "es": "No necesitabas haber traído un regalo.",
+          "en": "You needn't have brought a gift."
+        },
+        {
+          "es": "¿Qué deberíamos haber hecho en esa situación?",
+          "en": "What should we have done in that situation?"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Semi-modals and Related Forms",
+      "pattern": "ought to / used to / be used to / get used to / need",
+      "items": [
+        {
+          "es": "Deberías disculparte. *(ought to)*",
+          "en": "You ought to apologize."
+        },
+        {
+          "es": "Antes vivía en Madrid. *(used to)*",
+          "en": "I used to live in Madrid."
+        },
+        {
+          "es": "Estoy acostumbrado a trabajar de noche. *(be used to)*",
+          "en": "I am used to working at night."
+        },
+        {
+          "es": "Me estoy acostumbrando a la nueva rutina. *(get used to)*",
+          "en": "I am getting used to the new routine."
+        },
+        {
+          "es": "¿Necesito rellenar este formulario? *(need)*",
+          "en": "Do I need to fill out this form?"
+        },
+        {
+          "es": "No es necesario que vengas tan temprano. *(needn't)*",
+          "en": "You needn't come so early."
+        },
+        {
+          "es": "De adolescente, solía jugar al fútbol todos los días. *(used to)*",
+          "en": "As a teenager, I used to play football every day."
+        },
+        {
+          "es": "No estoy acostumbrada a este clima. *(be used to)*",
+          "en": "I am not used to this weather."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mixed Modals",
+      "pattern": "review of all modals above, choose the correct one for each context",
+      "items": [
+        {
+          "es": "No puede ser él, está de vacaciones.",
+          "en": "It can't be him, he's on vacation."
+        },
+        {
+          "es": "Deberíais haber reservado las entradas antes.",
+          "en": "You should have booked the tickets earlier."
+        },
+        {
+          "es": "¿Te importaría cerrar la ventana?",
+          "en": "Would you mind closing the window?"
+        },
+        {
+          "es": "Antes no me gustaban las verduras, pero ahora sí.",
+          "en": "I didn't use to like vegetables, but now I do."
+        },
+        {
+          "es": "Debe de haber mucho tráfico a esta hora.",
+          "en": "There must be a lot of traffic at this time."
+        },
+        {
+          "es": "No tenías por qué haber pagado la cena.",
+          "en": "You didn't need to pay for dinner."
+        },
+        {
+          "es": "Podrías haberme avisado.",
+          "en": "You could have told me."
+        },
+        {
+          "es": "Puede que no venga a la fiesta.",
+          "en": "She may not come to the party."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Modals + Conditionals",
+      "pattern": "if-clause (any conditional type) → modal verb in the result, or vice versa",
+      "items": [
+        {
+          "es": "Si estudiaras más, podrías aprobar el examen.",
+          "en": "If you studied more, you could pass the exam."
+        },
+        {
+          "es": "Si hubiera sabido eso, podría haberte ayudado.",
+          "en": "If I had known that, I could have helped you."
+        },
+        {
+          "es": "Si tuviéramos más tiempo, deberíamos visitar el museo.",
+          "en": "If we had more time, we should visit the museum."
+        },
+        {
+          "es": "Si él hubiera llegado antes, no habría tenido que esperar.",
+          "en": "If he had arrived earlier, he wouldn't have had to wait."
+        },
+        {
+          "es": "Si tuvieras ese problema, ¿qué deberías hacer?",
+          "en": "If you had that problem, what should you do?"
+        },
+        {
+          "es": "Si no hubiéramos perdido el vuelo, podríamos estar en casa ahora.",
+          "en": "If we hadn't missed the flight, we could be home now."
+        },
+        {
+          "es": "Si llueve mañana, tendrás que llevar un paraguas.",
+          "en": "If it rains tomorrow, you will have to bring an umbrella."
+        },
+        {
+          "es": "Si tuviera el dinero, podría comprarme un coche nuevo.",
+          "en": "If I had the money, I could buy a new car."
+        }
+      ]
+    }
+  ]
+}

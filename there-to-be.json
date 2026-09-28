@@ -1,0 +1,454 @@
+{
+  "title": "There + to be",
+  "instruction": "Translate each sentence from Spanish into English using \"there be\" (equivalent to *haber* in Spanish).",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Present — There is / There are",
+      "pattern": "there is + singular/uncountable · there are + plural",
+      "items": [
+        {
+          "es": "Hay un libro en la mesa.",
+          "en": "There is a book on the table."
+        },
+        {
+          "es": "Hay dos gatos en el jardín.",
+          "en": "There are two cats in the garden."
+        },
+        {
+          "es": "Hay mucha gente en la calle.",
+          "en": "There are a lot of people on the street."
+        },
+        {
+          "es": "Hay leche en la nevera.",
+          "en": "There is milk in the fridge."
+        },
+        {
+          "es": "Hay treinta estudiantes en la clase.",
+          "en": "There are thirty students in the class."
+        },
+        {
+          "es": "Hay un problema con el coche.",
+          "en": "There is a problem with the car."
+        },
+        {
+          "es": "Hay algunas manzanas en el cesto.",
+          "en": "There are some apples in the basket."
+        },
+        {
+          "es": "Hay agua suficiente para todos.",
+          "en": "There is enough water for everyone."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Past — There was / There were",
+      "pattern": "there was + singular/uncountable · there were + plural",
+      "items": [
+        {
+          "es": "Había una tormenta anoche.",
+          "en": "There was a storm last night."
+        },
+        {
+          "es": "Había mucha gente en la fiesta.",
+          "en": "There were a lot of people at the party."
+        },
+        {
+          "es": "Hubo un accidente esta mañana.",
+          "en": "There was an accident this morning."
+        },
+        {
+          "es": "No había nadie en casa.",
+          "en": "There was nobody at home."
+        },
+        {
+          "es": "Había tres sillas en la habitación.",
+          "en": "There were three chairs in the room."
+        },
+        {
+          "es": "Hubo varios problemas durante el viaje.",
+          "en": "There were several problems during the trip."
+        },
+        {
+          "es": "Había un perro durmiendo bajo el árbol.",
+          "en": "There was a dog sleeping under the tree."
+        },
+        {
+          "es": "No había suficiente comida para todos.",
+          "en": "There wasn't enough food for everyone."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Negative and Questions",
+      "pattern": "there isn't / there aren't · is there...? / are there...?",
+      "items": [
+        {
+          "es": "No hay leche en la nevera.",
+          "en": "There isn't any milk in the fridge."
+        },
+        {
+          "es": "No hay entradas disponibles.",
+          "en": "There aren't any tickets available."
+        },
+        {
+          "es": "¿Hay una farmacia cerca?",
+          "en": "Is there a pharmacy nearby?"
+        },
+        {
+          "es": "¿Hay mensajes para mí?",
+          "en": "Are there any messages for me?"
+        },
+        {
+          "es": "No había nadie en la oficina.",
+          "en": "There wasn't anybody in the office."
+        },
+        {
+          "es": "¿Había mucha gente en el concierto?",
+          "en": "Were there a lot of people at the concert?"
+        },
+        {
+          "es": "¿Habrá suficiente tiempo para terminar?",
+          "en": "Will there be enough time to finish?"
+        },
+        {
+          "es": "No habrá clases la próxima semana.",
+          "en": "There won't be classes next week."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Future, Perfect and Modal",
+      "pattern": "there will be · there has/have been · there must/can/should be · there is going to be",
+      "items": [
+        {
+          "es": "Habrá una reunión mañana.",
+          "en": "There will be a meeting tomorrow."
+        },
+        {
+          "es": "Ha habido un accidente en la autopista.",
+          "en": "There has been an accident on the highway."
+        },
+        {
+          "es": "Debe haber una razón para esto.",
+          "en": "There must be a reason for this."
+        },
+        {
+          "es": "Va a haber una tormenta esta noche.",
+          "en": "There is going to be a storm tonight."
+        },
+        {
+          "es": "Habrá muchos invitados en la boda.",
+          "en": "There will be a lot of guests at the wedding."
+        },
+        {
+          "es": "Ha habido varios cambios en la empresa.",
+          "en": "There have been several changes in the company."
+        },
+        {
+          "es": "Debe haber alguien en casa, las luces están encendidas.",
+          "en": "There must be somebody at home, the lights are on."
+        },
+        {
+          "es": "Va a haber problemas si no llegamos a tiempo.",
+          "en": "There are going to be problems if we don't arrive on time."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "There vs. It",
+      "pattern": "there → existence · it → weather, time, distance, identifying things already mentioned",
+      "items": [
+        {
+          "es": "Hay un problema con el coche. Está roto.",
+          "en": "There is a problem with the car. It's broken."
+        },
+        {
+          "es": "Hace frío hoy.",
+          "en": "It's cold today."
+        },
+        {
+          "es": "Son las tres en punto.",
+          "en": "It's three o'clock."
+        },
+        {
+          "es": "Hay una farmacia al final de la calle.",
+          "en": "There is a pharmacy at the end of the street."
+        },
+        {
+          "es": "Es tarde, deberíamos irnos.",
+          "en": "It's late, we should leave."
+        },
+        {
+          "es": "Hay treinta kilómetros hasta la ciudad.",
+          "en": "It's thirty kilometers to the city."
+        },
+        {
+          "es": "Hay un libro sobre la mesa. Es muy interesante.",
+          "en": "There is a book on the table. It's very interesting."
+        },
+        {
+          "es": "Está lloviendo.",
+          "en": "It's raining."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mixed with Conditionals",
+      "pattern": "there be combined with zero, first, second, third and mixed conditionals",
+      "items": [
+        {
+          "es": "Si calientas demasiado el agua, hay vapor.",
+          "en": "If you heat the water too much, there is steam."
+        },
+        {
+          "es": "Si no estudias, no habrá una buena nota.",
+          "en": "If you don't study, there won't be a good grade."
+        },
+        {
+          "es": "Si lloviera, habría un charco en el jardín.",
+          "en": "If it rained, there would be a puddle in the garden."
+        },
+        {
+          "es": "Si hubiera habido más tiempo, habríamos terminado el proyecto.",
+          "en": "If there had been more time, we would have finished the project."
+        },
+        {
+          "es": "Si hubiera más gente, habría más ruido.",
+          "en": "If there were more people, there would be more noise."
+        },
+        {
+          "es": "Si no hubiera habido tráfico, habría llegado a tiempo.",
+          "en": "If there hadn't been traffic, I would have arrived on time."
+        },
+        {
+          "es": "Si hubiera estudiado medicina, ahora habría más oportunidades para él.",
+          "en": "If he had studied medicine, there would be more opportunities for him now."
+        },
+        {
+          "es": "¿Qué pasaría si no hubiera agua en el planeta?",
+          "en": "What would happen if there were no water on the planet?"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Ron's exercises I",
+      "pattern": null,
+      "items": [
+        {
+          "es": "Hay un problema con el sistema nuevo.",
+          "en": "There's a problem with the new system."
+        },
+        {
+          "es": "Hay varios asuntos que atender.",
+          "en": "There are several matters to take care of."
+        },
+        {
+          "es": "Había mucha gente aquí cuando llegué.",
+          "en": "There were a lot of people here when I arrived."
+        },
+        {
+          "es": "Hubo una explosión en la fábrica anoche.",
+          "en": "There was an explosion in the factory last night."
+        },
+        {
+          "es": "Había varios faxes aquí esta mañana.",
+          "en": "There were several faxes here this morning."
+        },
+        {
+          "es": "Habrá una fiesta esta noche si no llueve.",
+          "en": "There will be a party tonight if it doesn't rain."
+        },
+        {
+          "es": "Va a haber una reunión esta tarde.",
+          "en": "There's going to be a meeting this afternoon."
+        },
+        {
+          "es": "Va a haber muchos problemas con esto.",
+          "en": "There are going to be a lot of problems with this."
+        },
+        {
+          "es": "Ha habido un malentendido.",
+          "en": "There's been a misunderstanding."
+        },
+        {
+          "es": "Ha habido varios casos.",
+          "en": "There have been several cases."
+        },
+        {
+          "es": "Habría menos casos si hubiera una vacuna.",
+          "en": "There would be fewer cases if there were a vaccine."
+        },
+        {
+          "es": "Debe haber una solución.",
+          "en": "There must be a solution."
+        },
+        {
+          "es": "Tiene que haber una forma de resolverlo.",
+          "en": "There has to be a way to solve it."
+        },
+        {
+          "es": "Tiene que haber al menos tres.",
+          "en": "There have to be at least three."
+        },
+        {
+          "es": "Debería haber más sillas.",
+          "en": "There should be more chairs."
+        },
+        {
+          "es": "Podría haber más de lo que piensas.",
+          "en": "There could be more than you think."
+        },
+        {
+          "es": "Me dijeron el otro día que había habido problemas con el sistema nuevo.",
+          "en": "They told me the other day that there had been problems with the new system."
+        },
+        {
+          "es": "Siempre ha habido problemas con el sistema.",
+          "en": "There have always been problems with the system."
+        },
+        {
+          "es": "No parece haber una solución.",
+          "en": "There doesn't seem to be a solution."
+        },
+        {
+          "es": "Habría habido más problemas si no hubiéramos visto el error a tiempo.",
+          "en": "There would have been more problems if we hadn't seen the mistake in time."
+        },
+        {
+          "es": "Antes había mucha gente aquí.",
+          "en": "There used to be a lot of people here."
+        },
+        {
+          "es": "No hay tantos como antes había.",
+          "en": "There aren't as many as there used to be."
+        },
+        {
+          "es": "No tiene que haber una solución necesariamente.",
+          "en": "There doesn't have to be a solution necessarily."
+        },
+        {
+          "es": "No puede haber tanta gente.",
+          "en": "There can't be that many people."
+        },
+        {
+          "es": "Puede que haya una solución.",
+          "en": "There may be a solution."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Ron's exercises II",
+      "pattern": null,
+      "items": [
+        {
+          "es": "Puede que haya habido un malentendido.",
+          "en": "There may have been a misunderstanding."
+        },
+        {
+          "es": "Quiero que haya una azafata en la reunión.",
+          "en": "I want there to be a hostess in the meeting."
+        },
+        {
+          "es": "Tráeme lo que haya.",
+          "en": "Bring me whatever there is."
+        },
+        {
+          "es": "No queda nada por hacer.",
+          "en": "There's nothing left to do."
+        },
+        {
+          "es": "Parece haber varias versiones.",
+          "en": "There seem to be several versions."
+        },
+        {
+          "es": "No habrá fiesta esta noche.",
+          "en": "There won't be a party tonight."
+        },
+        {
+          "es": "¿Cuándo habrá una reunión sobre esto?",
+          "en": "When will there be a meeting on this?"
+        },
+        {
+          "es": "¿Va a haber otra fiesta como la última?",
+          "en": "Is there going to be another party like the last one?"
+        },
+        {
+          "es": "Jamás ha habido alguien como ella.",
+          "en": "There's never been anyone like her."
+        },
+        {
+          "es": "Ha habido muchas tormentas últimamente.",
+          "en": "There have been several storms lately."
+        },
+        {
+          "es": "¿Por qué no había gente cuando llegué allí?",
+          "en": "Why weren't there any people when I got there?"
+        },
+        {
+          "es": "Podría haber habido un accidente.",
+          "en": "There could have been an accident."
+        },
+        {
+          "es": "Debería haber habido un guardia de seguridad.",
+          "en": "There should have been a security guard."
+        },
+        {
+          "es": "Me trajeron todo lo que había.",
+          "en": "They brought me everything there was."
+        },
+        {
+          "es": "No hay ni la mitad de lo que antes había.",
+          "en": "There isn't even half of what there used to be."
+        },
+        {
+          "es": "¿Ha habido muchas quejas últimamente?",
+          "en": "Have there been many complaints lately?"
+        },
+        {
+          "es": "No habría quejas si Pepe estuviera aquí.",
+          "en": "There wouldn't be any complaints if Pepe were here."
+        },
+        {
+          "es": "¿No debería haber un índice?",
+          "en": "Shouldn't there be an index?"
+        },
+        {
+          "es": "¿Ha habido llamadas para mí?",
+          "en": "Have there been any calls for me?"
+        },
+        {
+          "es": "¿Hubo heridos?",
+          "en": "Were there any injuries?"
+        },
+        {
+          "es": "¿Hay problemas?",
+          "en": "Are there any problems?"
+        },
+        {
+          "es": "¿Habrá alguien esperándome?",
+          "en": "Will there be anyone waiting for me?"
+        },
+        {
+          "es": "¿Hay alguna posibilidad?",
+          "en": "Is there a possibility?"
+        },
+        {
+          "es": "¿Ha habido algún cambio?",
+          "en": "Has there been a change?"
+        },
+        {
+          "es": "¿Ha habido algunos cambios?",
+          "en": "Have there been any changes?"
+        }
+      ]
+    }
+  ]
+}

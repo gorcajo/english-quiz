@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ES → EN Oral Quiz</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #1e293b;
+    --border: #334155;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --answer: #4ade80;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    padding: 2rem 1rem;
+  }
+  main { width: 100%; max-width: 50%; }
+  h1 { text-align: center; font-size: 1.4rem; margin-bottom: 1.5rem; }
+  .filters-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  fieldset {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+  }
+  #topics-fieldset { flex: 0.7; }
+  #sections-fieldset { flex: 1.3; }
+  legend { color: var(--muted); padding: 0 0.4rem; }
+  label.checkbox-row {
+    display: block;
+    padding: 0.25rem 0;
+    cursor: pointer;
+  }
+  .hint { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; text-align: center; }
+  #error {
+    display: none;
+    background: #7f1d1d;
+    border: 1px solid #b91c1c;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+  }
+  button {
+    background: var(--accent);
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .actions { display: flex; gap: 0.6rem; justify-content: center; margin-top: 1rem; }
+  #setup-view, #quiz-view { display: none; }
+  #setup-view.active, #quiz-view.active { display: block; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .card .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1rem; }
+  .card .es { font-size: 1.3rem; margin-bottom: 1.2rem; }
+  .card .en {
+    font-size: 1.3rem;
+    color: var(--answer);
+    min-height: 1.8rem;
+    visibility: hidden;
+  }
+  .card .en.visible { visibility: visible; }
+  .top-actions { display: flex; justify-content: space-between; margin-bottom: 1rem; }
+</style>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🗣️</text></svg>'>
+</head>
+
+<body>
+<main>
+  <h1>🗣️ ES → EN Oral Quiz</h1>
+
+  <div id="error"></div>
+
+  <section id="setup-view">
+    <div class="filters-row">
+      <fieldset id="topics-fieldset">
+        <legend>Topics</legend>
+      </fieldset>
+      <fieldset id="sections-fieldset">
+        <legend>Sections</legend>
+      </fieldset>
+    </div>
+    <div class="actions">
+      <button id="startBtn">Start quiz</button>
+    </div>
+  </section>
+
+  <section id="quiz-view">
+    <div class="top-actions">
+      <button class="secondary" id="backBtn">← Back</button>
+    </div>
+    <div class="card">
+      <div class="meta" id="cardMeta"></div>
+      <div class="es" id="cardEs"></div>
+      <div class="en" id="cardEn"></div>
+    </div>
+    <div class="actions">
+      <button id="actionBtn">Show answer</button>
+    </div>
+    <p class="hint">Say the translation out loud, then press Enter / Space or click the button.</p>
+  </section>
+</main>
+
+<script>
+const JSON_FILES = ['conditionals.json', 'modals.json', 'there-to-be.json'];
+
+let allSections = []; // { file, title, id, name, cards: [{es, en}] }
+let bank = [];
+let currentCard = null;
+let revealed = false;
+
+const errorBox = document.getElementById('error');
+const setupView = document.getElementById('setup-view');
+const quizView = document.getElementById('quiz-view');
+const topicsFieldset = document.getElementById('topics-fieldset');
+const sectionsFieldset = document.getElementById('sections-fieldset');
+const startBtn = document.getElementById('startBtn');
+const backBtn = document.getElementById('backBtn');
+const actionBtn = document.getElementById('actionBtn');
+const cardMeta = document.getElementById('cardMeta');
+const cardEs = document.getElementById('cardEs');
+const cardEn = document.getElementById('cardEn');
+
+function showError(message) {
+  errorBox.textContent = message;
+  errorBox.style.display = 'block';
+}
+
+async function loadFile(name) {
+  const response = await fetch(name);
+  if (!response.ok) {
+    throw new Error(`${name}: HTTP ${response.status}`);
+  }
+  return response.json();
+}
+
+function buildSections(file, data) {
+  const title = data.title || '(no title)';
+  const sections = [];
+  for (const section of data.sections || []) {
+    const cards = [];
+    for (const item of section.items || []) {
+      const es = (item.es || '').trim();
+      const en = (item.en || '').trim();
+      if (es && en) cards.push({ es, en });
+    }
+    if (cards.length) {
+      sections.push({
+        file,
+        title,
+        id: section.id,
+        name: section.name || '(no section)',
+        cards,
+      });
+    }
+  }
+  return sections;
+}
+
+function renderTopicCheckboxes() {
+  const titlesByTopic = {};
+  for (const s of allSections) titlesByTopic[s.file] = s.title;
+
+  topicsFieldset.innerHTML = '<legend>Topics</legend>';
+  for (const file of JSON_FILES) {
+    if (!(file in titlesByTopic)) continue;
+    const label = document.createElement('label');
+    label.className = 'checkbox-row';
+    label.innerHTML = `<input type="checkbox" data-topic="${file}" checked> ${titlesByTopic[file]}`;
+    label.querySelector('input').addEventListener('change', renderSectionCheckboxes);
+    topicsFieldset.appendChild(label);
+  }
+}
+
+function checkedTopics() {
+  return [...topicsFieldset.querySelectorAll('input[type=checkbox]:checked')].map(cb => cb.dataset.topic);
+}
+
+function renderSectionCheckboxes() {
+  const topics = new Set(checkedTopics());
+  sectionsFieldset.innerHTML = '<legend>Sections</legend>';
+  for (const section of allSections) {
+    if (!topics.has(section.file)) continue;
+    const label = document.createElement('label');
+    label.className = 'checkbox-row';
+    label.innerHTML = `<input type="checkbox" data-topic="${section.file}" data-id="${section.id}" checked> ${section.title} — ${section.name}`;
+    sectionsFieldset.appendChild(label);
+  }
+}
+
+function selectedSections() {
+  const boxes = [...sectionsFieldset.querySelectorAll('input[type=checkbox]:checked')];
+  const keys = new Set(boxes.map(cb => `${cb.dataset.topic}::${cb.dataset.id}`));
+  return allSections.filter(s => keys.has(`${s.file}::${s.id}`));
+}
+
+function pickCard() {
+  currentCard = bank[Math.floor(Math.random() * bank.length)];
+  revealed = false;
+  cardMeta.textContent = `${currentCard.title} — ${currentCard.name}`;
+  cardEs.textContent = currentCard.es;
+  cardEn.textContent = currentCard.en;
+  cardEn.classList.remove('visible');
+  actionBtn.textContent = 'Show answer';
+}
+
+function reveal() {
+  revealed = true;
+  cardEn.classList.add('visible');
+  actionBtn.textContent = 'Next card';
+}
+
+function advance() {
+  if (!revealed) reveal();
+  else pickCard();
+}
+
+startBtn.addEventListener('click', () => {
+  bank = selectedSections().flatMap(s => s.cards.map(c => ({ ...c, title: s.title, name: s.name })));
+  if (bank.length === 0) {
+    showError('No exercises match the selected filters.');
+    return;
+  }
+  errorBox.style.display = 'none';
+  setupView.classList.remove('active');
+  quizView.classList.add('active');
+  pickCard();
+});
+
+backBtn.addEventListener('click', () => {
+  quizView.classList.remove('active');
+  setupView.classList.add('active');
+});
+
+actionBtn.addEventListener('click', advance);
+
+document.addEventListener('keydown', (e) => {
+  if (!quizView.classList.contains('active')) return;
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    advance();
+  }
+});
+
+async function init() {
+  try {
+    const loaded = await Promise.all(JSON_FILES.map(f => loadFile(f).then(data => ({ file: f, data }))));
+    for (const { file, data } of loaded) {
+      allSections.push(...buildSections(file, data));
+    }
+    if (!allSections.length) {
+      showError('No exercises were found in the selected topics.');
+      return;
+    }
+    renderTopicCheckboxes();
+    renderSectionCheckboxes();
+    setupView.classList.add('active');
+  } catch (err) {
+    showError(
+      `Could not load exercise topics (${err.message}). ` +
+      `If you opened this file directly (file://), browsers block local JSON requests. ` +
+      `Serve this folder instead, e.g. run "python3 -m http.server" inside exercises/ and open http://localhost:8000/speak_translation_quiz.html`
+    );
+  }
+}
+
+init();
+</script>
+</body>
+</html>

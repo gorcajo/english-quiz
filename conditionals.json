@@ -1,0 +1,201 @@
+{
+  "title": "Conditionals",
+  "instruction": "Translate each sentence from Spanish into English using the indicated conditional type.",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Zero Conditional",
+      "pattern": "If + present simple → present simple",
+      "items": [
+        {
+          "es": "Si calientas el agua, hierve.",
+          "en": "If you heat water, it boils."
+        },
+        {
+          "es": "Si mezclas azul y amarillo, obtienes verde.",
+          "en": "If you mix blue and yellow, you get green."
+        },
+        {
+          "es": "Si no comes, tienes hambre.",
+          "en": "If you don't eat, you get hungry."
+        },
+        {
+          "es": "Si el sol se pone, oscurece.",
+          "en": "If the sun sets, it gets dark."
+        },
+        {
+          "es": "Si bebo café por la noche, no puedo dormir.",
+          "en": "If I drink coffee at night, I can't sleep."
+        },
+        {
+          "es": "Si tocas el fuego, te quemas.",
+          "en": "If you touch fire, you get burned."
+        },
+        {
+          "es": "La gente se enferma si no duerme lo suficiente.",
+          "en": "People get sick if they don't sleep enough."
+        },
+        {
+          "es": "Si el hielo se calienta, se derrite.",
+          "en": "If ice gets warm, it melts."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "First Conditional",
+      "pattern": "If + present simple → will + infinitive",
+      "items": [
+        {
+          "es": "Si llueve, me quedaré en casa.",
+          "en": "If it rains, I will stay home."
+        },
+        {
+          "es": "Si estudias, aprobarás.",
+          "en": "If you study, you will pass."
+        },
+        {
+          "es": "Si no te apresuras, perderás el tren.",
+          "en": "If you don't hurry, you will miss the train."
+        },
+        {
+          "es": "Te llamaré si tengo tiempo.",
+          "en": "I will call you if I have time."
+        },
+        {
+          "es": "Si llegamos tarde, se enfadará.",
+          "en": "If we arrive late, he will get angry."
+        },
+        {
+          "es": "Si no llueve mañana, iremos a la playa.",
+          "en": "If it doesn't rain tomorrow, we will go to the beach."
+        },
+        {
+          "es": "Si terminas el informe a tiempo, tu jefe estará contento.",
+          "en": "If you finish the report on time, your boss will be happy."
+        },
+        {
+          "es": "¿Qué harás si no consigues el trabajo?",
+          "en": "What will you do if you don't get the job?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Second Conditional",
+      "pattern": "If + past simple → would + infinitive",
+      "items": [
+        {
+          "es": "Si tuviera más dinero, viajaría.",
+          "en": "If I had more money, I would travel."
+        },
+        {
+          "es": "Si yo fuera tú, me disculparía.",
+          "en": "If I were you, I would apologize."
+        },
+        {
+          "es": "Si ganara la lotería, dejaría mi trabajo.",
+          "en": "If I won the lottery, I would quit my job."
+        },
+        {
+          "es": "Si supiera la respuesta, te la diría.",
+          "en": "If I knew the answer, I would tell you."
+        },
+        {
+          "es": "Si no tuviéramos que trabajar, viviríamos en la playa.",
+          "en": "If we didn't have to work, we would live at the beach."
+        },
+        {
+          "es": "¿Qué harías si vieras un fantasma?",
+          "en": "What would you do if you saw a ghost?"
+        },
+        {
+          "es": "Si ella hablara francés, conseguiría ese trabajo.",
+          "en": "If she spoke French, she would get that job."
+        },
+        {
+          "es": "Si pudiera volar, viajaría por todo el mundo.",
+          "en": "If I could fly, I would travel around the world."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Third Conditional",
+      "pattern": "If + past perfect → would have + past participle",
+      "items": [
+        {
+          "es": "Si hubiera estudiado, habría aprobado.",
+          "en": "If I had studied, I would have passed."
+        },
+        {
+          "es": "Si hubiéramos salido antes, no habríamos perdido el tren.",
+          "en": "If we had left earlier, we wouldn't have missed the train."
+        },
+        {
+          "es": "Si me hubieras avisado, habría venido.",
+          "en": "If you had told me, I would have come."
+        },
+        {
+          "es": "Si no hubiera llovido, habríamos ido a la playa.",
+          "en": "If it hadn't rained, we would have gone to the beach."
+        },
+        {
+          "es": "Si hubiera sabido eso, no habría dicho nada.",
+          "en": "If I had known that, I wouldn't have said anything."
+        },
+        {
+          "es": "Si hubieran trabajado más duro, habrían ganado el partido.",
+          "en": "If they had worked harder, they would have won the game."
+        },
+        {
+          "es": "¿Qué habrías hecho si hubieras estado allí?",
+          "en": "What would you have done if you had been there?"
+        },
+        {
+          "es": "Si no hubiese conocido a mi mujer, mi vida habría sido muy diferente.",
+          "en": "If I hadn't met my wife, my life would have been very different."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mixed Conditional",
+      "pattern": "If + past perfect → would + infinitive",
+      "items": [
+        {
+          "es": "Si hubiera estudiado medicina, ahora sería médico.",
+          "en": "If I had studied medicine, I would be a doctor now."
+        },
+        {
+          "es": "Si ella se hubiera mudado a Londres, hablaría mejor inglés.",
+          "en": "If she had moved to London, she would speak English better."
+        },
+        {
+          "es": "Si no hubiéramos perdido el vuelo, estaríamos en París ahora.",
+          "en": "If we hadn't missed the flight, we would be in Paris now."
+        },
+        {
+          "es": "Si hubiera ahorrado dinero de joven, no estaría tan preocupado ahora.",
+          "en": "If I had saved money when I was young, I wouldn't be so worried now."
+        },
+        {
+          "es": "Si no me hubiera roto la pierna, estaría jugando en este partido.",
+          "en": "If I hadn't broken my leg, I would be playing in this match."
+        },
+        {
+          "es": "Si hubiéramos comprado esa casa, ahora viviríamos en el centro.",
+          "en": "If we had bought that house, we would live downtown now."
+        },
+        {
+          "es": "Si él no hubiera dejado sus estudios, hoy tendría un mejor trabajo.",
+          "en": "If he hadn't dropped out of school, he would have a better job today."
+        },
+        {
+          "es": "Si no hubiera conocido a mi mejor amigo en la universidad, no estaría haciendo este trabajo ahora.",
+          "en": "If I hadn't met my best friend at university, I wouldn't be doing this job now."
+        }
+      ]
+    }
+  ]
+}
